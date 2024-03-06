@@ -725,6 +725,20 @@ input {
     width: 18px;
     z-index: 3;
 }
+.item-tab-link{
+    background-color: #f3f4f6;
+    padding: 5px 10px;
+}
+.item-tab-link a{
+    font-size: 13px;
+    color: #000;
+}
+.phone-hot h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--textColor);
+    font-size: 22px;
+}
 @keyframes progress_bar_fill{
     0% {
         background-position: 0 0;
