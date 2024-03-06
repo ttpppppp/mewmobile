@@ -281,6 +281,7 @@ span {
 }
 
 .flash-item {
+    overflow: hidden;
     position: relative;
     width: 215.75px;
     margin-right: 18px;
@@ -289,6 +290,12 @@ span {
     padding: 8px;
     border-radius: 10px;
     box-shadow: 0 0px 2px 0 rgba(60, 64, 67, 0.1), 0 0px 6px 0px rgba(60, 64, 67, 0.25);
+}
+.flash-item img{
+    transition: 0.4s linear;
+}
+.flash-item img:hover{
+    transform: scale(1.1);
 }
 
 .flash-top .title {
@@ -421,13 +428,20 @@ span {
     box-shadow: 0 0px 2px 0 rgba(60, 64, 67, 0.1), 0 0px 6px 0px rgba(60, 64, 67, 0.25);
     overflow: hidden;
 }
-
+.product-suggest img{
+    transition: 0.3s linear;
+}
+.product-suggest img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
 input {
     display: block;
     width: 100%;
 }
 
 .top-trending {
+    overflow: hidden;
     padding: 16px;
     background: linear-gradient(90deg, var(--bg_trending_1) 0%, var(--bg_trending_2) 100%);
 }
@@ -439,13 +453,37 @@ input {
 }
 .top-trending-item img {
     width: 130px;
+    position: relative;
 }
-
+.top-trending-item a{
+    text-decoration: none;
+}
+.top-trending-item p{
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--textColor);
+}
 .scroll_mobi {
     overflow-x: auto;
     overflow-y: hidden;
 }
-
+.img-abs{ 
+    position: relative;
+}
+.img-abs::before{
+    content: '+3';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 25px;
+    z-index: 1000000;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
 @keyframes deg {
     0% {
         transform: rotate(0deg) scale(1) skew(1deg);
@@ -621,6 +659,9 @@ input {
     .scroll_mobi {
         overflow-x: auto;
         overflow-y: hidden;
+    }
+    .phone-hot-img-left img{
+        width: 45%;
     }
 }
 
