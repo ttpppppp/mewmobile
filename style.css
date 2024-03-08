@@ -121,8 +121,7 @@ header {
     font-size: 14px;
 }
 
-.phone p,
-span {
+.phone p ,.phone span {
     font-weight: bold;
     font-size: 14px;
 }
@@ -977,4 +976,8 @@ input {
 }
 .banner{
     cursor: pointer;
+}
+.footer-title{
+    font-size: 20px;
+    color: var(--mainColor);
 }
