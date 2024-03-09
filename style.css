@@ -429,11 +429,16 @@ header {
     box-shadow: 0 0px 2px 0 rgba(60, 64, 67, 0.1), 0 0px 6px 0px rgba(60, 64, 67, 0.25);
     overflow: hidden;
 }
-
-.product-suggest img {
-    transition: 0.3s linear;
+.product-suggest .label-tag{
+    top: 45%;
 }
-
+.product-suggest .product-suggest-img img{
+    transition: 0.3s linear;
+    height: 100%;
+}
+.product-suggest-img{
+    height: 150px;
+}
 .product-suggest img:hover {
     transform: scale(1.1);
     cursor: pointer;
@@ -805,6 +810,9 @@ input {
     color: var(--textColor);
     font-size: 22px;
 }
+.phone-hot .flash-item{
+    width: 222px;
+}
 
 @keyframes progress_bar_fill {
     0% {
@@ -980,4 +988,13 @@ input {
 .footer-title{
     font-size: 20px;
     color: var(--mainColor);
+}
+.clock h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--textColor);
+    font-size: 22px;
+}
+.clock .flash-item{
+    width: 196px;
 }
