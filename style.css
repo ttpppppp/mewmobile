@@ -146,7 +146,7 @@ header {
     filter: opacity(0.4);
 }
 
-.cart {
+.cart-menu {
     color: #fff;
     padding: 5px;
     border-radius: 5px;
@@ -155,9 +155,9 @@ header {
     cursor: pointer;
 }
 
-.cart:hover span {}
+.cart-menu:hover span {}
 
-.cart p {
+.cart-menu p {
     line-height: 0.95;
 }
 
@@ -697,13 +697,9 @@ input {
         display: block;
         left: -50px;
     }
-
     .cart i {
         font-size: 24px;
     }
-
-    .slider img {}
-
     .product-box {
         margin-right: 20px;
     }
@@ -711,9 +707,6 @@ input {
     .product-poli .item span {
         font-size: 14px;
     }
-
-    .product-poli .item {}
-
     .product-filter-top {
         display: flex;
         align-items: center;
@@ -737,9 +730,6 @@ input {
     .flash-item {
         width: 160px;
     }
-
-    .flash-list {}
-
     .label-tag {
         font-size: 8px;
         top: 40%;
@@ -756,6 +746,15 @@ input {
     }
     .clock .flash-item{
         width: 160px !important;
+    }
+    .item-tab-link {
+        background-color: #f3f4f6;
+        padding: 5px 10px;
+    }
+    
+    .item-tab-link a {
+        font-size: 11px !important;
+        color: #000;
     }
 }
 
@@ -1031,7 +1030,7 @@ input {
 }
 .fix-phone i{
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
     color: #fff;
     cursor: pointer;
 }
@@ -1056,4 +1055,70 @@ input {
     border-radius: 0 50px 0px 0;
     box-shadow: 30px 0 0 0 var(--mainColor);
     pointer-events: none;
+}
+.login-form-home{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 100000000000000;
+    display: none;
+}
+.login-form-home form{
+    width: 400px;
+}
+.login-form-home input{
+    outline: none;
+    padding: 8.5px 20px;
+    letter-spacing: 1px;
+    border: 1px solid rgb(222, 226, 230);
+    margin-bottom: 20px;
+}
+.login-form-home form h3{
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--textColor);
+}
+.layer{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    z-index: 100000000;
+    display: none;
+}
+.close{
+    cursor: pointer;
+    color: var(--textColor);
+}
+.animation-form{
+    display: block;
+}
+.no-scroll {
+    overflow: hidden;
+}
+.fix-phone .fa-phone-volume{
+    animation: deg ease 1.5s infinite;
+}
+.form-box .btn-facebook{
+    background: #4866a8;
+}
+
+.form-box .btn-google{
+    background: #da3f34;
+}
+
+.form-box .btn-twitter{
+    background: #33ccff;
+}
+
+.btn-social {
+    color: #fff;
+    border: 0px;
+    display: inline-block;
+    margin: 0px;
+    margin-right: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
