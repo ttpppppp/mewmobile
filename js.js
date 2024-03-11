@@ -1,7 +1,7 @@
 const targetDate = new Date('2024-05-15T00:00:00').getTime();
 
 // Update the countdown every second
-const interval = setInterval(function() {
+const interval = setInterval(function () {
     // Get the current date and time
     const currentDate = new Date().getTime();
 
@@ -26,43 +26,3 @@ const interval = setInterval(function() {
         document.getElementById('countdown').innerText = 'Đã hết thời gian!';
     }
 }, 1000);
-// var swiper = new Swiper('.swiper', {
-//     slidesPerView: 2,
-//     direction: getDirection(),
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//     },
-//     on: {
-//         resize: function () {
-//             swiper.changeDirection(getDirection());
-//         },
-//     },
-// });
-
-// function getDirection() {
-//     var windowWidth = window.innerWidth;
-//     var direction = window.innerWidth <= 960 ? 'vertical' : 'horizontal';
-
-//     return direction;
-// }
-
-$('.filtering').slick({
-    slidesToShow: 4,
-    slidesToScroll: 4
-  });
-  
-  var filtered = false;
-  
-  $('.js-filter').on('click', function(){
-    if (filtered === false) {
-      $('.filtering').slick('slickFilter',':even');
-      $(this).text('Unfilter Slides');
-      filtered = true;
-    } else {
-      $('.filtering').slick('slickUnfilter');
-      $(this).text('Filter Slides');
-      filtered = false;
-    }
-  });
-              

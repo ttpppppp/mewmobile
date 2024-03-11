@@ -36,9 +36,12 @@ body {
     background-color: var(--lightLeftColBackground) !important;
     font-family: 'Poppins', sans-serif !important;
 }
-
-main {}
-
+::-webkit-scrollbar {
+    width: 2px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--mainColor); 
+}
 header {
     padding: 8px 0px;
     background: linear-gradient(90deg, var(--mainColor), var(--mainColor2));
@@ -128,6 +131,7 @@ header {
 
 .phone i {
     animation: deg 1.5s ease infinite;
+    font-size: 24px;
 }
 
 .blog-block .log-block-abs::after {
@@ -197,7 +201,7 @@ header {
     display: none;
     background: linear-gradient(90deg, var(--mainColor), var(--mainColor2));
     padding: 10px;
-    z-index: 10000;
+    z-index: 1000000000000;
 }
 
 .menu-mobile input {
@@ -272,7 +276,7 @@ header {
     border-top-right-radius: 18px;
     background-color: #fff;
     display: none;
-    z-index: 10000;
+    z-index: 100000000;
 }
 
 .flash-sale {
@@ -532,8 +536,6 @@ input {
 }
 
 @media screen and (max-width: 1286px) {
-    header {}
-
     .phone i {
         display: none;
     }
@@ -553,10 +555,8 @@ input {
     .system {
         margin-left: 6px;
     }
-
-    .scroll_mobi {
-        overflow-x: auto;
-        overflow-y: hidden;
+    .phone-hot .flash-item{
+        width: 180px !important;
     }
 }
 
@@ -735,7 +735,7 @@ input {
     }
 
     .flash-item {
-        width: 140px;
+        width: 160px;
     }
 
     .flash-list {}
@@ -748,10 +748,14 @@ input {
     .carousel-inner {
         height: 100px;
     }
-
-    .scroll_mobi {
-        overflow-x: auto;
-        overflow-y: hidden;
+    .fix-phone{
+        display: none;
+    }
+    .phone-hot .flash-item{
+        width: 160px !important;
+    }
+    .clock .flash-item{
+        width: 160px !important;
     }
 }
 
@@ -997,4 +1001,59 @@ input {
 }
 .clock .flash-item{
     width: 196px;
+}
+.cart{
+    position: absolute;
+    top: 55%;
+    right: -50px;
+    background-color: var(--mainColor);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: linear 0.3s;
+    opacity: 0;
+}
+.flash-item:hover .cart{
+    opacity: 1;
+    right: 10px;
+}
+.fix-phone{
+    position: fixed;
+    right: 0px;
+    top: 40%;
+    background-color: var(--mainColor);
+    padding: 26px 16px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.fix-phone i{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.fix-phone::after{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 60px;
+    top: -30px;
+    right: 0px;
+    border-radius: 0 0 50px 0;
+    box-shadow: 30px 0 0 0 var(--mainColor);
+    pointer-events: none;
+}
+.fix-phone::before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 60px;
+    bottom: -30px;
+    right: 0px;
+    border-radius: 0 50px 0px 0;
+    box-shadow: 30px 0 0 0 var(--mainColor);
+    pointer-events: none;
 }
