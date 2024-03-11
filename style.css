@@ -556,7 +556,7 @@ input {
         margin-left: 6px;
     }
     .phone-hot .flash-item{
-        width: 180px !important;
+        width: 185px !important;
     }
 }
 
@@ -579,7 +579,7 @@ input {
     }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.20px) {
     .form-search {
         width: 220px;
     }
@@ -590,6 +590,12 @@ input {
 
     .top-trending-item img {
         width: 100px;
+    }
+    .phone-hot .flash-item{
+        width: 210px !important;
+    }
+    .clock .flash-item{
+        width: 214px !important;
     }
 }
 
