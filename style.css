@@ -736,7 +736,7 @@ input {
     }
 
     .flash-item {
-        width: 160px;
+        width: 172px;
     }
     .label-tag {
         font-size: 8px;
@@ -750,10 +750,10 @@ input {
         display: none;
     }
     .phone-hot .flash-item{
-        width: 160px !important;
+        width: 170px !important;
     }
     .clock .flash-item{
-        width: 160px !important;
+        width: 172px !important;
     }
     .item-tab-link {
         background-color: #f3f4f6;
@@ -1167,4 +1167,25 @@ input {
 }
 .color span{
     font-size: 12px;
+}
+.menu-mobile-mb .active-color{
+    color: var(--mainColor);
+}
+.scrol-top{
+    position: fixed;
+    right: 20px;
+    bottom: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--mainColor);
+    transition: 0.5s linear;
+    opacity: 0;
+}
+.animation-srooltop{
+    bottom: 40px;
+    opacity: 1;
 }
