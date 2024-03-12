@@ -736,7 +736,7 @@ input {
     }
 
     .flash-item {
-        width: 172px;
+        width: 165px;
     }
     .label-tag {
         font-size: 8px;
@@ -750,10 +750,10 @@ input {
         display: none;
     }
     .phone-hot .flash-item{
-        width: 170px !important;
+        width: 165px !important;
     }
     .clock .flash-item{
-        width: 172px !important;
+        width: 165px !important;
     }
     .item-tab-link {
         background-color: #f3f4f6;
@@ -763,6 +763,9 @@ input {
     .item-tab-link a {
         font-size: 11px !important;
         color: #000;
+    }
+    .scrol-top{
+        display: none;
     }
 }
 
