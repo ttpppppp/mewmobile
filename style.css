@@ -29,6 +29,7 @@
     --cl_tit_trending: ;
     --bg_trending_1: #ffecd1;
     --bg_trending_2: #ffb49c;
+    --bgGift: #fee2e2;
 }
 
 body {
@@ -1191,4 +1192,20 @@ input {
 .animation-srooltop{
     bottom: 40px;
     opacity: 1;
+}
+.gift{
+    width: 100%;
+    border-radius: 20px;
+    background: var(--bgGift);
+}
+.gift img{
+    width: 76px;
+    border: 2px solid var(--mainColor);
+    border-radius: 10px;
+}
+.gift b{
+    color: var(--mainColor);
+}
+.btn-gift{
+    width: 200px;
 }
