@@ -1027,7 +1027,7 @@ input {
     transition: linear 0.3s;
     opacity: 0;
     color: #fff;
-    cursor: pointer;
+    z-index: 1000000;
 }
 .flash-item:hover .cart{
     opacity: 1;
