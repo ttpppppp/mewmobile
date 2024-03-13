@@ -1136,7 +1136,7 @@ input {
     font-weight: bold;
     margin-bottom: 10px;
 }
-.details h3{
+.details > h3{
     font-size: 24px;
     font-weight: bold;
     color: var(--textColor);
@@ -1208,4 +1208,41 @@ input {
 }
 .btn-gift{
     width: 200px;
+}
+.free-gifts legend {
+    width: auto;
+    color: var(--mainColor);
+    font-weight: 600;
+    border-radius: 20px;
+    border: 1px solid;
+    font-size: 18px;
+    background-color: #fff;
+    padding: 0px 5px;
+    transform: translateY(-20px);
+}
+.free-gifts {
+    border: 1px dashed var(--mainColor);
+    padding-bottom: 5px !important;
+}
+.free-gifts legend img{
+    width: 20px;
+}
+.free-gifts .item .m_copy {
+    background: var(--mainColor);
+    border-radius: 15px;
+    border: 1px solid;
+}
+.text-main{
+    color: var(--mainColor);
+}
+.special-content_title{
+    font-size: 18px;
+    color: var(--mainColor);
+}
+.expandable-content{
+    font-size: 14px
+}
+.expandable-content h3 ,  .expandable-content h2{
+    font-size: 18px;
+    color: var(--textColor);
 }
