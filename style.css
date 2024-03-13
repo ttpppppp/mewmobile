@@ -1246,3 +1246,46 @@ input {
     font-size: 18px;
     color: var(--textColor);
 }
+.menu-lv1{
+    position: absolute;
+    display: block;
+    background: #fff;
+    border: 1px solid var(--mainColor);
+    z-index: 9;
+    top: 143%;
+    transform: translateY(40px);
+    opacity: 0;
+    min-width: 240px;
+    padding: 10px 5px;
+    transition: all 0.4s
+}
+.menu-lv1::after{
+    content: "";
+    display: block;
+    width: 250px;
+    height: 20px;
+    background-color: transparent;
+    position: absolute;
+    top: -20px;
+}
+.menu-lv1 li a{
+    color: var(--textColor);
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 300;
+}
+.menu-lv1 li a:hover{
+    color: var(--mainColor);
+}
+.menu-lv1 li{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.menu li:nth-child(2):hover .menu-lv1 ,
+.menu li:nth-child(4):hover .menu-lv1,
+.menu li:nth-child(8):hover .menu-lv1,
+.menu li:nth-child(9):hover .menu-lv1 {
+    transform: translateY(0);
+    opacity: 1;
+}
