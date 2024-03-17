@@ -699,6 +699,13 @@ input {
     .phone-hot-img-left img {
         width: 45%;
     }
+    .animation-srooltop {
+        bottom: 80px !important;
+        opacity: 1;
+    }
+    .clock .flash-item{
+        width:210px !important;
+    }
 }
 
 @media screen and (max-width: 670px) {
@@ -808,12 +815,20 @@ input {
     width: 18px;
     z-index: 3;
 }
-
+.item-tab-link.active{
+    border: 1px solid var(--mainColor);
+}
+.item-tab-link.active a{
+    color: var(--mainColor);
+}
 .item-tab-link {
     background-color: #f3f4f6;
     padding: 5px 10px;
+    border: 1px solid #ccc;
 }
-
+.item-tab-link:hover{
+    border: 1px solid var(--mainColor);
+}
 .item-tab-link a {
     font-size: 13px;
     color: #000;
