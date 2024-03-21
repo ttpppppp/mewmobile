@@ -486,9 +486,7 @@ input {
 
 .scroll_mobi {
     overflow-x: auto;
-    overflow-y: hidden;
 }
-
 .img-abs {
     position: relative;
 }
@@ -685,17 +683,6 @@ input {
     .carousel-inner {
         height: 250px;
     }
-
-    .scroll_mobi {
-        overflow-x: auto;
-        overflow-y: hidden;
-    }
-
-    .scroll_mobi {
-        overflow-x: auto;
-        overflow-y: hidden;
-    }
-
     .phone-hot-img-left img {
         width: 45%;
     }
@@ -1043,6 +1030,7 @@ input {
     opacity: 0;
     color: #fff;
     z-index: 1000000;
+    cursor: pointer;
 }
 .flash-item:hover .cart{
     opacity: 1;
@@ -1304,3 +1292,22 @@ input {
     transform: translateY(0);
     opacity: 1;
 } */
+.blogs-rights a{
+    font-size: 14px;
+}
+.main-header .logo h1{
+    font-size: 22px;
+    color: #000;
+}
+.breadcrumb-item {
+    display: inline-block;
+    font-size: 0.85714em;
+    color: #999999;
+}
+.section-title {
+    color: #333333;
+    font-size: 16px;
+}
+.table-container .table {
+    background-color: transparent;
+}
