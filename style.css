@@ -487,6 +487,12 @@ input {
 .scroll_mobi {
     overflow-x: auto;
 }
+.scroll_mobi::-webkit-scrollbar {
+    height: 3px;
+}
+.scroll_mobi::-webkit-scrollbar-thumb {
+    background-color: var(--mainColor);
+}
 .img-abs {
     position: relative;
 }
@@ -667,10 +673,6 @@ input {
         font-size: 22px;
     }
 
-    .text-sale {
-        display: none;
-    }
-
     .product-filter-top-box {
         margin-right: 5px;
         margin-top: 5px;
@@ -748,7 +750,7 @@ input {
         width: 160px !important;
     }
     .clock .flash-item{
-        width: 160px !important;
+        width: 170px !important;
     }
     .item-tab-link {
         background-color: #f3f4f6;
@@ -761,6 +763,9 @@ input {
     }
     .scrol-top{
         opacity: 0 !important;
+    }
+    .clock .flash-item{
+        margin: 0;
     }
 }
 
