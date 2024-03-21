@@ -604,6 +604,9 @@ input {
     .clock .flash-item{
         width: 214px !important;
     }
+    .flash-item{
+        width: 210px !important;
+    }
 }
 
 @media screen and (max-width: 992px) {
