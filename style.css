@@ -736,7 +736,7 @@ input {
     }
 
     .flash-item {
-        width: 160px;
+        width: 160px !important;
     }
     .label-tag {
         font-size: 8px;
