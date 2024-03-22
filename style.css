@@ -784,6 +784,9 @@ input {
     .clock .flash-item{
         margin: 0;
     }
+    .login-form-home{
+        width: 350px;
+    }
 }
 
 .sold-module {
@@ -1276,13 +1279,12 @@ input {
 }
 .menu-lv1{
     position: absolute;
-    display: block;
+    display: none;
     background: #fff;
     border: 1px solid var(--mainColor);
     z-index: 9;
     top: 143%;
     transform: translateY(40px);
-    opacity: 0;
     min-width: 240px;
     padding: 10px 5px;
     transition: all 0.4s
@@ -1310,13 +1312,13 @@ input {
     margin-bottom: 10px;
     cursor: pointer;
 }
-/* .menu li:nth-child(2):hover .menu-lv1 ,
+.menu li:nth-child(2):hover .menu-lv1 ,
 .menu li:nth-child(4):hover .menu-lv1,
 .menu li:nth-child(8):hover .menu-lv1,
 .menu li:nth-child(9):hover .menu-lv1 {
     transform: translateY(0);
-    opacity: 1;
-} */
+    display: block;
+}
 .blogs-rights a{
     font-size: 14px;
 }
