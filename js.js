@@ -2,6 +2,9 @@ let loginForm = document.querySelector(".login-form-home");
 let close = document.querySelector(".close");
 let layer = document.querySelector(".layer");
 let scrollElement = document.querySelector(".scrol-top");
+let eventIMG = document.querySelector(".event");
+let eventForm = document.querySelector(".event-form");
+let closeevent = document.querySelector(".close-event");
 document.addEventListener("DOMContentLoaded", function () {
     countDown();
     showForm();
@@ -44,21 +47,19 @@ const showForm = () => {
         layer.classList.remove("animation-form");
     });
 }
+const eventFormF = () => {
+    eventIMG.addEventListener("click" , function(){
+        eventForm.classList.add('event-form-animation');
+        layer.classList.add('event-form-animation');
+    })
+    closeevent.addEventListener("click", function () {
+        eventForm.classList.remove("event-form-animation");
+        layer.classList.remove("event-form-animation");
+    });
+    layer.addEventListener("click", function () {
+        eventForm.classList.remove("event-form-animation");
+        layer.classList.remove("event-form-animation");
+    });
+}
 
-function countdownRedirect() {
-    var seconds = 10;
-    var countdownElement = document.getElementById('countdown-timer');
-    function updateCountdown() {
-      seconds--;
-      countdownElement.textContent = seconds;
-      if (seconds <= 0) {
-        clearInterval(timer);
-        window.location.href = '/'; 
-      }
-    }
-    var timer = setInterval(updateCountdown, 1000);
-  }
-
-  window.onload = function() {
-    countdownRedirect();
-};
+eventFormF();

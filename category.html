@@ -1,0 +1,813 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Mew Mobile</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="shortcut icon"
+        href="https://file.hstatic.net/200000823693/file/favicon_57c734b04e1e4e918b68e996bf90399c.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="menu-top">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 p-1 position-relative">
+                        <a class="text-decoration-none text-black" href="index.html"> <img src="./img/logo.webp" alt
+                                class="img-fluid pointer-event"></a>
+                    </div>
+                    <div class="p-0 top-right col-lg-10 d-flex align-items-center gap-2">
+                        <a class="system">
+                            <p>Hệ thống cửa hàng</p>
+                            <p>(45 chi nhánh)</p>
+                        </a>
+                        <form class="form-search">
+                            <input type="text" placeholder="Bạn tìm gì hôm nay?">
+                            <button type="submit" class="btn-search"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                        <div class="blog-block">
+                            <a class="blog-block-abs">24 Công nghệ</a>
+                            <a href>Sự kiện</a>
+                        </div>
+                        <div class="phone">
+                            <div class="text-white contact d-flex align-items-center gap-2 me-2">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <div class="text-white">
+                                    <span>Hotline</span>
+                                    <p class="m-0">900.636.099</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <div class="text-white contact d-flex align-items-center gap-2">
+                                <i class="fa-regular fa-user fs-4"></i>
+                                <div class="user-text text-white">
+                                    <span><a href="login.html">Đăng
+                                            nhập</a></span>
+                                    <p class="m-0"><a href="register.html">Đăng kí</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-menu">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <div class="cart-text">
+                                    <a href="cart.html" class="text-decoration-none text-white">
+                                        <span>Giỏ</span>
+                                        <p class="m-0">hàng</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href>Điện thoại</a>
+                </li>
+                <li class="position-relative">
+                    <a href>SmartWatch</a>
+                    <i class="fa-solid fa-sort-down"></i>
+                    <ul class="menu-lv1 rounded-3">
+                        <li>
+                            <a href="">Apple Watch</a>
+                        </li>
+                        <li>
+                            <a href="">SamSung</a>
+                        </li>
+                        <li>
+                            <a href="">Huawei</a>
+                        </li>
+                        <li>
+                            <a href="">Xiaomi</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href>Laptop</a>
+                </li>
+                <li class="position-relative">
+                    <a href>Loa,tai nghe</a>
+                    <i class="fa-solid fa-sort-down"></i>
+                    <ul class="menu-lv1 rounded-3">
+                        <li>
+                            <a href="">Loa</a>
+                        </li>
+                        <li>
+                            <a href="">Tai nghe</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href>Phụ kiện</a>
+                    <i class="fa-solid fa-sort-down"></i>
+                </li>
+                <li>
+                    <a href>Tablet</a>
+                </li>
+                <li>
+                    <a href>Đồng hồ</a>
+                </li>
+                <li class="position-relative">
+                    <a href>PC,Máy in</a>
+                    <i class="fa-solid fa-sort-down"></i>
+                    <ul class="menu-lv1 rounded-3">
+                        <li>
+                            <a href="">PC</a>
+                        </li>
+                        <li>
+                            <a href="">Máy in</a>
+                        </li>
+                        <li>
+                            <a href="">Mực in</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="position-relative">
+                    <a href>Khác</a>
+                    <i class="fa-solid fa-sort-down"></i>
+                    <ul class="menu-lv1 rounded-3">
+                        <li>
+                            <a href="">Tin tức</a>
+                        </li>
+                        <li>
+                            <a href="">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="">Liên hệ</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="menu-mobile">
+        <div class="container">
+            <div class="d-flex align-items-center gap-4">
+                <a href="index.html" class="d-block">
+                    <img loading="lazy" src="./img/logo_mobi.webp" alt class="img-fluid" style="width: 100px;">
+                </a>
+                <div class="form-search">
+                    <input type="text" class="w-100" placeholder="Bạn muốn tìm gì?...">
+                    <button type="submit" class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <a href="login.html" class="text-white text-decoration-none"><i class="fa-regular fa-user fs-4"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="menu-mobile-mb">
+        <div class="d-flex align-items-center justify-content-center gap-2 pt-2">
+            <div style="width: 20%;" class="text-center active">
+                <a href="index.html" class="active-color"><i class="fa-solid fa-house-user"></i>
+                    <p class="">Trang chủ</p>
+                </a>
+            </div>
+            <div style="width: 20%;" class="text-center">
+                <a href=""><i class="fa-regular fa-heart"></i></i>
+                    <p>Yêu thích</p>
+                </a>
+            </div>
+            <div style="width: 20%;" class="text-center">
+                <a href=""><i class="fa-solid fa-bars"></i>
+                    <p>Danh mục</p>
+                </a>
+            </div>
+            <div style="width: 20%;" class="text-center">
+                <a href=""><i class="fa-regular fa-message"></i>
+                    <p>Tư vấn</p>
+                </a>
+            </div>
+            <div style="width: 20%;" class="text-center">
+                <a href=""><i class="fa-solid fa-cart-shopping"></i>
+                    <p>Giỏ hàng</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="login-nav-top mt-5 mt-lg-0">
+            <div class="container">
+                <ul class="mt-3 mt-lg-0">
+                    <li>
+                        <a href="index.html">Trang chủ</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <a href="login.html">Điện thoại Iphone</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section>
+            <div class="container bg-white p-3 mt-4 rounded-3">
+                <div class="d-flex gap-3">
+                    <img src="https://file.hstatic.net/200000823693/file/banner_collec_1_110caff53e3c4432b2fb9ee40ed28576.jpg"
+                        alt="" class="rounded-3" width="630px">
+                    <img src="https://file.hstatic.net/200000823693/file/banner_collec_2_692de9cbef1f43c085ac86cb21f53945.jpg"
+                        alt="" class="rounded-3" width="630px">
+                </div>
+                <div class="bg-main mt-2 aside-content rounded-3">
+                    <ul class="nav navbar-pills p-2">
+                        <li class="nav-item position-relative ">
+                            <a title="Điện thoại" class="nav-link fw-bold text-white"
+                                href="/collections/dien-thoai">Điện thoại</a>
+                        </li>
+                        <li class="nav-item position-relative  position-relative">
+                            <a title="Smartwatch" href="/collections/smartwatch"
+                                class="nav-link align-items-center d-flex fw-bold text-white">
+                                Smartwatch
+                            </a>
+                        </li>
+                        <li class="nav-item position-relative ">
+                            <a title="Laptop" class="nav-link fw-bold text-white"
+                                href="/collections/laptop">Laptop</a>
+                        </li>
+                        <li class="nav-item position-relative  position-relative">
+                            <a title="Loa, tai nghe" href="/collections/loa-tai-nghe"
+                                class="nav-link align-items-center d-flex fw-bold text-white">
+                                Loa, tai nghe
+                            </a>
+                        </li>
+                        <li class="nav-item position-relative  position-relative">
+                            <a title="Phụ kiện" href="/collections/phu-kien"
+                                class="nav-link align-items-center d-flex fw-bold text-white">
+                                Phụ kiện
+                            </a>
+                        </li>
+                        <li class="nav-item position-relative ">
+                            <a title="Tablet" class="nav-link fw-bold text-white"
+                                href="/collections/tablet">Tablet</a>
+                        </li>
+                        <li class="nav-item position-relative ">
+                            <a title="Đồng hồ" class="nav-link fw-bold text-white"
+                                href="/collections/dong-ho">Đồng hồ</a>
+                        </li>
+                        <li class="nav-item position-relative  position-relative">
+                            <a title="PC, Máy in" href="/collections/pc-may-in"
+                                class="nav-link align-items-center d-flex fw-bold text-white">
+                                PC, Máy in
+
+                            </a>
+                            <ul class="menu_down" style="display:none;">
+
+
+                                <li class="nav-item">
+                                    <a title="PC" class="nav-link" href="/collections/pc">PC</a>
+                                </li>
+
+
+
+                                <li class="nav-item">
+                                    <a title="Máy in" class="nav-link" href="/collections/may-in">Máy in</a>
+                                </li>
+
+
+
+                                <li class="nav-item">
+                                    <a title="Mực in" class="nav-link" href="/collections/muc-in">Mực in</a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                        <li class="nav-item position-relative  position-relative">
+                            <a title="Khác" href="#"
+                                class="nav-link align-items-center d-flex fw-bold text-white">
+                                Khác
+
+                            </a>
+                            <ul class="menu_down" style="display:none;">
+
+
+                                <li class="dropdown-submenu nav-item  position-relative">
+                                    <a title="Tin tức" class="nav-link pr-5" href="/blogs/news">Tin tức</a>
+                                    <i class="open_mnu down_icon align-items-center justify-content-center"></i>
+                                    <ul class="menu_down" style="display:none;">
+
+
+                                        <li class="nav-item">
+                                            <a title="Tin mới" class="nav-link pl-4" href="/blogs/news">Tin mới </a>
+                                        </li>
+
+
+
+                                        <li class="nav-item">
+                                            <a title="24h Công nghệ" class="nav-link pl-4"
+                                                href="/blogs/24-cong-nghe">24h Công nghệ </a>
+                                        </li>
+
+
+
+                                        <li class="nav-item">
+                                            <a title="Sự kiện" class="nav-link pl-4" href="/blogs/su-kien">Sự kiện </a>
+                                        </li>
+
+
+
+                                        <li class="nav-item">
+                                            <a title="Thủ thuật hay" class="nav-link pl-4" href="/blogs/thu-thuat">Thủ
+                                                thuật hay </a>
+                                        </li>
+
+
+
+                                        <li class="nav-item">
+                                            <a title="Review sản phẩm" class="nav-link pl-4"
+                                                href="/blogs/review-san-pham">Review sản phẩm </a>
+                                        </li>
+
+
+                                    </ul>
+                                </li>
+
+
+
+                                <li class="nav-item">
+                                    <a title="Giới thiệu" class="nav-link" href="/pages/about-us">Giới thiệu</a>
+                                </li>
+
+
+
+                                <li class="nav-item">
+                                    <a title="Liên hệ" class="nav-link" href="/pages/lien-he">Liên hệ</a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-3">
+                        <div class="m-0 pt-2 pb-2 fw-bold text-main fs-5">Lọc giá</div>
+                        <div class="">
+                            <ul class="list-unstyled m-0 d-flex gap-3 flex-column">
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" value="" id="flexCheckDefault" name="price">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Dưới 100.000đ
+                                        </label>
+                                      </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" value="" id="flexCheckDefault" name="price">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            100.000đ - 200.000đ
+                                        </label>
+                                      </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" value="" id="flexCheckDefault" name="price">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            200.000đ - 500.000đ
+                                        </label>
+                                      </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" value="" id="flexCheckDefault" name="price">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            500.000đ - 1.000.000đ
+                                        </label>
+                                      </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" value="" id="flexCheckDefault" name="price">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            1.000.000đ - 2.000.000đ
+                                        </label>
+                                      </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" value="" id="flexCheckDefault" name="price">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Trên 2.000.000đ
+                                        </label>
+                                      </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <aside class="aside-item filter-vendor mb-3 col-12 col-sm-4 col-lg-12">
+                            <div class="m-0 pt-2 pb-2 fw-bold fs-5 text-main">Thương hiệu</div>
+                               
+                        </aside>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                        <div class="d-flex align-items-center gap-2 border-bottom pb-2">
+                            <p class="m-0 mt-2 fw-bold">Sắp xếp theo:</p>
+                            <div class="sortPagiBar mt-2">
+                                <ul class="nav navbar-pills gap-3">
+                                    <li class="nav-item border rounded-3">
+                                        <a class="nav-link p-2 text-black" href="">Mặc định</a>
+                                    </li>
+                                    <li class="nav-item border rounded-3">
+                                        <a class="nav-link p-2 text-black" href="">Giá tăng dần</a>
+                                    </li>
+                                    <li class="nav-item border rounded-3">
+                                        <a class="nav-link p-2 text-black" href="">Giá giảm dần</a>
+                                    </li>
+                                    <li class="nav-item border rounded-3">
+                                        <a class="nav-link p-2 text-black" href="">Mới nhất</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                                <div class="flash-item me-0">
+                                    <a href>
+                                        <img loading="lazy" src="./img/item1.webp" alt
+                                            class="img-fluid">
+                                    </a>
+                                    <div class="flash-text">
+                                        <div
+                                            class="sold-module d-flex w-100 position-relative text-left">
+                                            <img loading="lazy"
+                                                src="//theme.hstatic.net/200000823693/1001172883/14/hot-sale.png?v=978"
+                                                decoding="async"
+                                                class="position-absolute"
+                                                alt="Sắp Cháy hàng">
+                                            <div
+                                                class="d-flex align-items-center justify-content-center sold position-absolute h-100 w-100">
+                                                Sắp Cháy hàng</div>
+                                            <div
+                                                class="remain modal-open position-absolute h-100"
+                                                style="width:82%"></div>
+                                        </div>
+                                        <p class="m-0">iPhone 13 128GB
+                                        </p>
+                                        <div class="price">
+                                            <span
+                                                class="text-danger">21,590,000đ</span>
+                                            <span class="price-sale">
+                                                25,600,000₫
+                                            </span>
+                                        </div>
+                                        <div
+                                            class="d-flex align-items-center gap-2">
+                                            <i
+                                                class="fa-regular fa-heart"></i>
+                                            <label for>Yêu thích</label>
+                                        </div>
+                                    </div>
+                                    <span
+                                        class="label-sale position-absolute">
+                                        Giảm 9%
+                                    </span>
+                                    <span
+                                        class="label-tag d-flex align-items-center position-absolute">
+                                        <img loading="lazy" src="./img/hot-sale.webp"
+                                            alt style="width: 22px;">
+                                        Sale giữa tháng
+                                    </span>
+                                    <div class="cart">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                                <div class="flash-item me-0">
+                                    <a href>
+                                        <img loading="lazy" src="./img/item1.webp" alt
+                                            class="img-fluid">
+                                    </a>
+                                    <div class="flash-text">
+                                        <div
+                                            class="sold-module d-flex w-100 position-relative text-left">
+                                            <img loading="lazy"
+                                                src="//theme.hstatic.net/200000823693/1001172883/14/hot-sale.png?v=978"
+                                                decoding="async"
+                                                class="position-absolute"
+                                                alt="Sắp Cháy hàng">
+                                            <div
+                                                class="d-flex align-items-center justify-content-center sold position-absolute h-100 w-100">
+                                                Sắp Cháy hàng</div>
+                                            <div
+                                                class="remain modal-open position-absolute h-100"
+                                                style="width:82%"></div>
+                                        </div>
+                                        <p class="m-0">iPhone 13 128GB
+                                        </p>
+                                        <div class="price">
+                                            <span
+                                                class="text-danger">21,590,000đ</span>
+                                            <span class="price-sale">
+                                                25,600,000₫
+                                            </span>
+                                        </div>
+                                        <div
+                                            class="d-flex align-items-center gap-2">
+                                            <i
+                                                class="fa-regular fa-heart"></i>
+                                            <label for>Yêu thích</label>
+                                        </div>
+                                    </div>
+                                    <span
+                                        class="label-sale position-absolute">
+                                        Giảm 9%
+                                    </span>
+                                    <span
+                                        class="label-tag d-flex align-items-center position-absolute">
+                                        <img loading="lazy" src="./img/hot-sale.webp"
+                                            alt style="width: 22px;">
+                                        Sale giữa tháng
+                                    </span>
+                                    <div class="cart">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                                <div class="flash-item me-0">
+                                    <a href>
+                                        <img loading="lazy" src="./img/item1.webp" alt
+                                            class="img-fluid">
+                                    </a>
+                                    <div class="flash-text">
+                                        <div
+                                            class="sold-module d-flex w-100 position-relative text-left">
+                                            <img loading="lazy"
+                                                src="//theme.hstatic.net/200000823693/1001172883/14/hot-sale.png?v=978"
+                                                decoding="async"
+                                                class="position-absolute"
+                                                alt="Sắp Cháy hàng">
+                                            <div
+                                                class="d-flex align-items-center justify-content-center sold position-absolute h-100 w-100">
+                                                Sắp Cháy hàng</div>
+                                            <div
+                                                class="remain modal-open position-absolute h-100"
+                                                style="width:82%"></div>
+                                        </div>
+                                        <p class="m-0">iPhone 13 128GB
+                                        </p>
+                                        <div class="price">
+                                            <span
+                                                class="text-danger">21,590,000đ</span>
+                                            <span class="price-sale">
+                                                25,600,000₫
+                                            </span>
+                                        </div>
+                                        <div
+                                            class="d-flex align-items-center gap-2">
+                                            <i
+                                                class="fa-regular fa-heart"></i>
+                                            <label for>Yêu thích</label>
+                                        </div>
+                                    </div>
+                                    <span
+                                        class="label-sale position-absolute">
+                                        Giảm 9%
+                                    </span>
+                                    <span
+                                        class="label-tag d-flex align-items-center position-absolute">
+                                        <img loading="lazy" src="./img/hot-sale.webp"
+                                            alt style="width: 22px;">
+                                        Sale giữa tháng
+                                    </span>
+                                    <div class="cart">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                                <div class="flash-item me-0">
+                                    <a href>
+                                        <img loading="lazy" src="./img/item1.webp" alt
+                                            class="img-fluid">
+                                    </a>
+                                    <div class="flash-text">
+                                        <div
+                                            class="sold-module d-flex w-100 position-relative text-left">
+                                            <img loading="lazy"
+                                                src="//theme.hstatic.net/200000823693/1001172883/14/hot-sale.png?v=978"
+                                                decoding="async"
+                                                class="position-absolute"
+                                                alt="Sắp Cháy hàng">
+                                            <div
+                                                class="d-flex align-items-center justify-content-center sold position-absolute h-100 w-100">
+                                                Sắp Cháy hàng</div>
+                                            <div
+                                                class="remain modal-open position-absolute h-100"
+                                                style="width:82%"></div>
+                                        </div>
+                                        <p class="m-0">iPhone 13 128GB
+                                        </p>
+                                        <div class="price">
+                                            <span
+                                                class="text-danger">21,590,000đ</span>
+                                            <span class="price-sale">
+                                                25,600,000₫
+                                            </span>
+                                        </div>
+                                        <div
+                                            class="d-flex align-items-center gap-2">
+                                            <i
+                                                class="fa-regular fa-heart"></i>
+                                            <label for>Yêu thích</label>
+                                        </div>
+                                    </div>
+                                    <span
+                                        class="label-sale position-absolute">
+                                        Giảm 9%
+                                    </span>
+                                    <span
+                                        class="label-tag d-flex align-items-center position-absolute">
+                                        <img loading="lazy" src="./img/hot-sale.webp"
+                                            alt style="width: 22px;">
+                                        Sale giữa tháng
+                                    </span>
+                                    <div class="cart">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white p-4 mt-3">
+            <div class="container">
+                <div class="row mt-3 mb-5">
+                    <div class="col-sm-12 col-lg-6 col-md-7 p-0">
+                        <img src="https://file.hstatic.net/200000823693/file/logo_foo_320e3cee3eba49c4ae45be243a914d15.png"
+                            width="200px" class="mb-2">
+                        <address class="vcard mb-2">
+                            <p class="adr m-0"><b>Hà Nội: </b>Tầng 3, tòa nhà The Artemis, số 03 Lê Trọng Tấn, Khương
+                                Mai, Thanh Xuân, Hà Nội</p>
+                            <p class="m-0"><b>Hotline: </b><a class="text-decoration-none text-black"
+                                    href="tel:1900636099" title="1900.636.099">1900.636.099</a></p>
+                            <p class="adr m-0"><b>HCM: </b>Lầu 6, 182 Lê Đại Hành, P.15, Quận 11, Tp.HCM</p>
+                            <p class="m-0"><b>Hotline: </b><a class="text-decoration-none text-black"
+                                    href="tel:1900636099" title="1900.636.099">1900.636.099</a></p>
+                            <p class="m-0"><b>Email: </b><a class="text-decoration-none text-black"
+                                    href="mailto:support@haravan.com"
+                                    title="support@haravan.com">support@haravan.com</a></p>
+                        </address>
+                    </div>
+                    <div class="col-6 col-lg-3 col-md-6 p-0">
+                        <h3 class="footer-title mb-2 position-relative fw-bold">Chính sách</h3>
+                        <ul class="links list-unstyled m-0 p-0">
+                            <li><a class="text-decoration-none text-black" href="" title="Tìm kiếm">Tìm kiếm</a></li>
+
+                            <li><a class="text-decoration-none text-black" href="" title="Giới thiệu">Giới thiệu</a>
+                            </li>
+
+                            <li><a class="text-decoration-none text-black" href="" title="Chính sách đổi trả">Chính sách
+                                    đổi trả</a></li>
+
+                            <li><a class="text-decoration-none text-black" href="" title="Chính sách bảo mật">Chính sách
+                                    bảo mật</a></li>
+
+                            <li><a class="text-decoration-none text-black" href="" title="Điều khoản dịch vụ">Điều khoản
+                                    dịch vụ</a></li>
+
+                            <li><a class="text-decoration-none text-black" href="" title="Liên hệ">Liên hệ</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6 p-0">
+                        <h3 class="footer-title mb-2 position-relative fw-bold">Hỗ trợ</h3>
+                        <div class="d-flex align-items-center gap-1">
+                            <img src="https://file.hstatic.net/200000785527/file/facebook_ce742afdcdea4026a633915bdfdce6f5.png"
+                                alt="">
+                            <img src="https://file.hstatic.net/200000785527/file/twitter_b15cb1006ec04c63855aef2dec8fac47.png"
+                                alt="">
+                            <img src="https://file.hstatic.net/200000785527/file/instagram_45effdfd0d0e47d986a7c8b1a8e2ab01.png"
+                                alt="">
+                            <img src="https://file.hstatic.net/200000785527/file/youtube_749d73527fb94f2c8d005d2ffdb1ca10.png"
+                                alt="">
+                            <img src="https://file.hstatic.net/200000785527/file/shopee_efcb449798c24dd4a4a312f1ad9e3e8d.png"
+                                width="32px" alt="">
+                            <img src="https://file.hstatic.net/200000785527/file/lazada_0080ef48005044af8ba3f720097866f7.jpg"
+                                width="32px" alt="" class="rounded-5">
+                        </div>
+                        <p class="mt-2">Phương thức thanh toán</p>
+                        <div class="d-flex align-items-center gap-1">
+                            <img src="https://file.hstatic.net/200000823693/file/payment-1_2c94a9495fa04f4ab8b11be786441266.png"
+                                alt="" width="45px">
+                            <img src="https://file.hstatic.net/200000823693/file/payment-2_bdbf0ab7d5d24e138faa24e497b38a9b.png"
+                                alt="" width="45px">
+                            <img src="https://file.hstatic.net/200000823693/file/payment-3_3a8dba86bfd74a85be3db17837d4c9c6.png"
+                                alt="" width="45px">
+                            <img src="https://file.hstatic.net/200000823693/file/payment-4_f03f301a303c448db851de3e9e91ade2.png"
+                                alt="" width="45px">
+                        </div>
+                    </div>
+                </div>
+                <div class="row border-top border-bottom py-4">
+                    <ul class="links_sm list-unstyled row mb-0 p-0">
+                        <li class="col-6 col-sm-4 col-md-3 col-lg-2 m-0"><a class="text-decoration-none text-black"
+                                href="/collections/dien-thoai-iphone" title="IPhone">IPhone</a></li>
+
+                        <li class="col-6 col-sm-4 col-md-3 col-lg-2 m-0"><a class="text-decoration-none text-black"
+                                href="/collections/tablet" title="Máy tính bảng">Máy tính bảng</a></li>
+
+                        <li class="col-6 col-sm-4 col-md-3 col-lg-2 m-0"><a class="text-decoration-none text-black"
+                                href="/collections/macbook" title="Macbook">Macbook</a></li>
+
+                        <li class="col-6 col-sm-4 col-md-3 col-lg-2 m-0"><a class="text-decoration-none text-black"
+                                href="/collections/phu-kien-laptop" title="Phụ kiện laptop">Phụ kiện laptop</a></li>
+
+                        <li class="col-6 col-sm-4 col-md-3 col-lg-2 m-0"><a class="text-decoration-none text-black"
+                                href="/collections/smartwatch" title="Smartwatch">Smartwatch</a></li>
+
+                        <li class="col-6 col-sm-4 col-md-3 col-lg-2 m-0"><a class="text-decoration-none text-black"
+                                href="/collections/cap-sac" title="Cáp sạc">Cáp sạc</a></li>
+
+                        <li class="col-6 col-sm-4 col-md-3 col-lg-2 m-0"><a class="text-decoration-none text-black"
+                                href="/collections/dan-man-hinh" title="Dán màn hình">Dán màn hình</a></li>
+
+                        <li class="col-6 col-sm-4 col-md-3 col-lg-2 m-0"><a class="text-decoration-none text-black"
+                                href="/collections/op-lung-bao-da" title="Ốp lưng - bao da">Ốp lưng - bao da</a></li>
+
+                        <li class="col-6 col-sm-4 col-md-3 col-lg-2 m-0"><a class="text-decoration-none text-black"
+                                href="/collections/pin-du-phong" title="Pin dự phòng">Pin dự phòng</a></li>
+
+                        <li class="col-6 col-sm-4 col-md-3 col-lg-2 m-0"><a class="text-decoration-none text-black"
+                                href="/collections/tai-nghe" title="Tai nghe">Tai nghe</a></li>
+
+                        <li class="col-6 col-sm-4 col-md-3 col-lg-2 m-0"><a class="text-decoration-none text-black"
+                                href="/collections/thiet-bi-mang" title="Thiết bị mạng">Thiết bị mạng</a></li>
+
+                        <li class="col-6 col-sm-4 col-md-3 col-lg-2 m-0"><a class="text-decoration-none text-black"
+                                href="/collections/tivi" title="Tivi">Tivi</a></li>
+
+                        <li class="col-6 col-sm-4 col-md-3 col-lg-2 m-0"><a class="text-decoration-none text-black"
+                                href="/collections/may-hut-bui" title="Robot hút bụi">Robot hút bụi</a></li>
+
+                        <li class="col-6 col-sm-4 col-md-3 col-lg-2 m-0"><a class="text-decoration-none text-black"
+                                href="/collections/quat-thong-minh" title="Quạt thông minh">Quạt thông minh</a></li>
+
+                        <li class="col-6 col-sm-4 col-md-3 col-lg-2 m-0"><a class="text-decoration-none text-black"
+                                href="/collections/chuot-ban-phim" title="Chuột, bàn phím">Chuột, bàn phím</a></li>
+
+                        <li class="col-6 col-sm-4 col-md-3 col-lg-2 m-0"><a class="text-decoration-none text-black"
+                                href="/collections/thiet-bi-luu-tru" title="USB">USB</a></li>
+
+                        <li class="col-6 col-sm-4 col-md-3 col-lg-2 m-0"><a class="text-decoration-none text-black"
+                                href="/collections/balo-laptop" title="Balo chống sốc">Balo chống sốc</a></li>
+
+                        <li class="col-6 col-sm-4 col-md-3 col-lg-2 m-0"><a class="text-decoration-none text-black"
+                                href="/collections/camera-an-ninh" title="Camera an ninh">Camera an ninh</a></li>
+
+                        <li class="col-6 col-sm-4 col-md-3 col-lg-2 m-0"><a class="text-decoration-none text-black"
+                                href="/collections/camera-du-lich" title="Camera du lịch">Camera du lịch</a></li>
+
+                        <li class="col-6 col-sm-4 col-md-3 col-lg-2 m-0"><a class="text-decoration-none text-black"
+                                href="/collections/o-cung" title="Ổ cứng">Ổ cứng</a></li>
+
+                    </ul>
+                </div>
+                <span class="d-block mt-2 text-center pb-5 pb-lg-0">Bản quyền thuộc về Tran Tien Phuc. Powered by
+                    TPP</span>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+</body>
+
+</html>

@@ -1155,7 +1155,7 @@ input {
     background: #33ccff;
 }
 
-.btn-social {
+.btn.btn-social {
     color: #fff;
     border: 0px;
     display: inline-block;
@@ -1356,4 +1356,48 @@ input {
 }
 .top-trending img , .top-trending i{
     cursor: pointer;
+}
+.bg-main {
+    background: var(--mainColor);
+}
+.aside-content.bg-main {
+    filter: hue-rotate(17deg) contrast(1.2);
+}
+.aside-content .nav {
+    background: rgba(255, 255, 255, 0.6);
+    gap: 5px;
+}
+.aside-content ul li{
+    border-radius: 0px;
+    transition: linear 0.3s;
+}
+.aside-content ul li:hover{
+    background-color: var(--mainColor);
+    border-radius: 5px;
+}
+.event{
+    position: fixed;
+    bottom: 90px;
+    right: 10px;
+    z-index: 10000;
+}
+.event img{
+    width: 70px;
+    cursor: pointer;
+}
+.event-form{
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    background-image: url('./img/650x380\ \(3\)-1709721488.png');
+    width: 650px;
+    height: 380px;
+    z-index: 10000000000000;
+    display: none;
+}
+.event-form i{
+    cursor: pointer;
+}
+.event-form-animation{
+    display: block;
 }
