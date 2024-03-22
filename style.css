@@ -72,6 +72,7 @@ header {
 
 .system p {
     font-weight: bold;
+    transition: linear 0.3s;
 }
 
 .system:hover p {
@@ -118,23 +119,36 @@ header {
     margin-left: 10px;
     position: relative;
     text-decoration: none;
+    cursor: pointer;
+    transition: linear 0.3s;
 }
-
+.blog-block a:hover{
+    color: var(--menuHover);
+}
 .user a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
+    transition: linear 0.3s;
+}
+.user a:hover{
+    color: var(--menuHover);
 }
 
 .phone p ,.phone span {
     font-weight: bold;
     font-size: 14px;
+    cursor: pointer;
+    transition: linear 0.3s;
 }
-
+.phone p:hover ,.phone span:hover, .phone i:hover  {
+    color: var(--menuHover);
+}
 .phone i {
     animation: deg 1.5s ease infinite;
     font-size: 24px;
+    cursor: pointer;
 }
 
 .blog-block .log-block-abs::after {
@@ -157,11 +171,9 @@ header {
     background-color: rgba(255, 255, 255, 0.2);
     cursor: pointer;
 }
-
-.cart-menu:hover span {}
-
-.cart-menu p {
+.cart-menu p , .cart-menu span , .cart-menu i {
     line-height: 0.95;
+    transition: 0.3s;
 }
 
 .menu {
@@ -435,6 +447,7 @@ header {
 .product-suggest {
     box-shadow: 0 0px 2px 0 rgba(60, 64, 67, 0.1), 0 0px 6px 0px rgba(60, 64, 67, 0.25);
     overflow: hidden;
+    position: relative;
 }
 .product-suggest .label-tag{
     top: 45%;
@@ -510,6 +523,7 @@ input {
     align-items: center;
     justify-content: center;
     color: #fff;
+    cursor: pointer;
 }
 
 @keyframes deg {
@@ -1164,9 +1178,12 @@ input {
     border: 2px solid var(--mainColor);
 }
 .data{
-    border: 1px solid var(--mainColor);
+    border: 1px solid #ccc;
     display: block;
     padding: 5px 10px;
+}
+.data.borderactive{
+    border: 1px solid var(--mainColor);
 }
 .bg-active{
     background: #fffaeb;
@@ -1318,4 +1335,23 @@ input {
 }
 .table-container .table {
     background-color: transparent;
+}
+.product-suggest:hover .cart{
+    opacity: 1;
+    right: 10px;
+}
+.cart-menu:hover span , .cart-menu:hover p , .cart-menu:hover i{
+    color: var(--menuHover);
+}
+.footter-sp{
+    cursor: pointer;
+}
+.color-border{
+    border: 1px solid #ccc;
+}
+.color-border.active{
+    border: 1px solid var(--mainColor);
+}
+.top-trending img , .top-trending i{
+    cursor: pointer;
 }
