@@ -1096,7 +1096,7 @@ input {
     pointer-events: none;
 }
 .login-form-home{
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50% , -50%);
@@ -1119,7 +1119,7 @@ input {
     color: var(--textColor);
 }
 .layer{
-    position: absolute;
+    position: fixed;
     width: 100%;
     min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
@@ -1140,15 +1140,15 @@ input {
 .fix-phone .fa-phone-volume{
     animation: deg ease 1.5s infinite;
 }
-.form-box .btn-facebook{
+.btn.btn-facebook{
     background: #4866a8;
 }
 
-.form-box .btn-google{
+.btn.btn-google{
     background: #da3f34;
 }
 
-.form-box .btn-twitter{
+.btn.btn-twitter{
     background: #33ccff;
 }
 

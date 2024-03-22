@@ -2,10 +2,9 @@ let loginForm = document.querySelector(".login-form-home");
 let close = document.querySelector(".close");
 let layer = document.querySelector(".layer");
 let scrollElement = document.querySelector(".scrol-top");
-console.log(scroll);
 document.addEventListener("DOMContentLoaded", function () {
     countDown();
-    // showForm();
+    showForm();
     document.addEventListener("scroll" , function(){
         if(scrollY > 50){
             scrollElement.classList.add("animation-srooltop");
@@ -36,15 +35,30 @@ const countDown = () => {
 const showForm = () => {
     loginForm.classList.add("animation-form");
     layer.classList.add("animation-form");
-    document.body.classList.add("no-scroll");
     close.addEventListener("click", function () {
         loginForm.classList.remove("animation-form");
         layer.classList.remove("animation-form");
-        document.body.classList.remove("no-scroll");
     });
     layer.addEventListener("click", function () {
         loginForm.classList.remove("animation-form");
         layer.classList.remove("animation-form");
-        document.body.classList.remove("no-scroll");
     });
 }
+
+function countdownRedirect() {
+    var seconds = 10;
+    var countdownElement = document.getElementById('countdown-timer');
+    function updateCountdown() {
+      seconds--;
+      countdownElement.textContent = seconds;
+      if (seconds <= 0) {
+        clearInterval(timer);
+        window.location.href = '/'; 
+      }
+    }
+    var timer = setInterval(updateCountdown, 1000);
+  }
+
+  window.onload = function() {
+    countdownRedirect();
+};
