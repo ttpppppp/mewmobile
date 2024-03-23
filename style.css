@@ -787,6 +787,16 @@ input {
     .login-form-home{
         width: 350px;
     }
+    .event-form{
+        width: 350px !important;
+        height: 360px !important;
+        left: 20%;
+    }
+    .event-form .content{
+        width: 75% !important;
+        right: 40px !important;
+    }
+
 }
 
 .sold-module {
@@ -1387,9 +1397,11 @@ input {
 }
 .event-form{
     position: fixed;
-    top: 30%;
-    left: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
     background-image: url('./img/650x380\ \(3\)-1709721488.png');
+    background-repeat: no-repeat;
     width: 650px;
     height: 380px;
     z-index: 10000000000000;
@@ -1400,4 +1412,9 @@ input {
 }
 .event-form-animation{
     display: block;
+}
+.event-form .content{
+    position: absolute;
+    top: 25%;
+    right: 50px;
 }
