@@ -1477,3 +1477,12 @@ input {
     top: 7.5px;
     opacity: 1;
 }
+.b-tech ul li{
+    flex: 0 0 20%;
+}
+.b-tech ul li img{
+    width: 48px;
+}
+.b-tech ul li span{
+    font-size: 10px;
+}
