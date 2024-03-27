@@ -712,6 +712,9 @@ input {
     .clock .flash-item{
         width:210px !important;
     }
+    .menu-mobile img{
+        width: 60px !important;
+    }
 }
 
 @media screen and (max-width: 670px) {
@@ -796,9 +799,15 @@ input {
         width: 75% !important;
         right: 40px !important;
     }
-
+    .menu-mobile img{
+        width: 70px !important;
+    }
 }
-
+@media screen and (max-width: 576px) {
+    .menu-mobile img{
+        width: 100px !important;
+    }
+}
 .sold-module {
     height: 20px;
     border-radius: 10px;
